@@ -11,3 +11,8 @@ exports.index = function(req, res)
 {
 	res.render('__frontend/index');
 }
+
+exports.test = function(req, res) 
+{
+	res.render('__frontend/test');
+}
