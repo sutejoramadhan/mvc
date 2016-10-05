@@ -1,0 +1,69 @@
+extends __layout.pug
+
+block content
+	section#main-slider.no-margin
+		.carousel.slide.wet-asphalt
+			ol.carousel-indicators
+				li(data-target='#main-slider', data-slide-to='0').active
+				li(data-target='main-slider', data-slide-to='1')
+				li(data-target='main-slider', data-slide-to='2')
+			.carousel-inner
+				.item.active(style='background-image: url(images/slider/slide1.png)')
+					.container
+						.row
+							.com-sm-12
+								.carousel-content.centered(style='margin-top: 265.5px;')
+									h2.boxed.animation.animated-item-1 Powerful and Responsive Web Design
+									p.boxed.animation.animated-item-2 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+				.item(style='background-image: url(images/slider/slide2.png)')
+					.container
+						.row
+							.com-sm-12
+								.carousel-content.center.centered(style='margin-top: 265.5px;')
+									h2.boxed.animation.animated-item-1 Clean, Crisp, Powerful and Responsive Web Design
+									p.boxed.animation.animated-item-2 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+									br
+									a.btn.btn-md.animation.animated-item-3(href='#') Learn More
+
+				.item(style='background-image: url(images/slider/slide3.png)')
+					.container
+						.row
+							.com-sm-6
+								.carousel-content.centered
+									h2.boxed.animation.animated-item-1 Powerful and Responsive Web Design Theme
+									p.boxed.animation.animated-item-2 Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+									br
+									a.boxed.btn.btn-md.animation.animated-item-3(href='#') Learn More
+
+		a.prev.hidden-xs(href='#main-slider' data-slide='prev')
+			i.icon-angle-left
+		a.next.hidden.xs(href='#main-slider' data-slide='next')
+			i.icon-angle-right
+
+	section#services.emerald
+		.container
+			.row
+				.col-md-4.col-sm-6
+					.media
+						.pull-left
+							i.icon-laptop.icon-md
+						.media-body
+							h3.media-body Network and Security
+							p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+
+				.col-md-4.col-sm-6
+					.media
+						.pull-left
+							i.icon-code.icon-md
+						.media-body
+							h3.media-body Software Enginering
+							p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+
+				.col-md-4.col-sm-6
+					.media
+						.pull-left
+							i.icon-reorder.icon-md
+						.media-body
+							h3.media-body Database/Basis Data
+							p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
